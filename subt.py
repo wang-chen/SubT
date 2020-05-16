@@ -37,7 +37,7 @@ import torch.utils.data as Data
 import torchvision.transforms as transforms
 from torch.utils.data import Dataset, DataLoader
 
-class SubTF(Dataset):
+class SubT(Dataset):
     '''
     The DARPA Subterranean (SubT) Challenge Front camera data recorded by Team Exploer
     args:
@@ -99,7 +99,7 @@ if __name__ == "__main__":
         transforms.Resize((320,320)),
         transforms.ToTensor()])
 
-    data = SubTF(root=args.data_root, train=False, transform=transform, test_data=1)
+    data = SubT(root=args.data_root, train=False, transform=transform, test_data=1)
     loader = Data.DataLoader(dataset=data, batch_size=1, shuffle=False)
 
     for batch_idx, frame in enumerate(tqdm.tqdm(loader)):

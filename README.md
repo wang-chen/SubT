@@ -1,6 +1,6 @@
-# SubTF
+# SubT
 
-The SubTF dataset PyTorch dataloader.
+The SubT dataset PyTorch dataloader.
 
 # Description
 
@@ -8,7 +8,7 @@ The SubTF dataset PyTorch dataloader.
 
 # Usage example:
 
-        data = SubTF(root=args.data_root, train=False, transform=transform, test_data=1)
+        data = SubT(root=args.data_root, train=False, transform=transform, test_data=1)
         loader = Data.DataLoader(dataset=data, batch_size=1, shuffle=False)
 # Project
 

@@ -1,6 +1,10 @@
 # SubT
 
-The SubT dataset PyTorch dataloader.
+The tools for the SubT dataset.
+
+This repo contains both PyTorch dataloader and Python evaluation tools.
+
+The dataloader is only for SubT front camera data (SubTF).
 
 # Description
 
@@ -28,12 +32,13 @@ For single sequence:
 For overall performance on entire dataset
 
       python performance.py --save-flag example --root results-example --category interest-1
-      # save-flag: ground file
-      # results-example: location of results file
+      # root: location of result files
+      # save-flag: flag of result files
+      #     You have to name the result files following the formate of "SubTF-5-2020-03-04-22:06:43-example.txt", 
+      #     where only the sequence ID, date, and time can be different.
       # category: interest-1 or interest-2
 
 More information about this evaluation metric, checkout [our paper](https://arxiv.org/pdf/2005.08829.pdf).
-
 
 # Citation
 

@@ -45,10 +45,12 @@ For example, after you run the following overall performance script, you will ge
       python performance.py --save-flag example --root results-example --category interest-2 --delta 1 2 3
 
 * Mean Accuracy for delta = [1,2,3]
+
       mean accuracy: [0.26001525 0.37333027 0.5226512 ]
 
 * One Text file located in 'performance' folder.
-      The data of AUC-OP (three curves for delta = [1,2,3]
+
+      It contains data of AUC-OP (three curves for delta = [1,2,3])
 
 * One overal performance figure, six single sequence figures.
 

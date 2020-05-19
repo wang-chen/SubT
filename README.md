@@ -4,7 +4,6 @@ The tools for the SubT dataset.
 
 This repo contains both PyTorch dataloader and Python evaluation tools.
 
-The dataloader is only for SubT front camera data (SubTF).
 
 # Description
 
@@ -14,6 +13,7 @@ The dataloader is only for SubT front camera data (SubTF).
 
         data = SubTF(root='/data/location', train=False, transform=transform, test_data=1)
         loader = Data.DataLoader(dataset=data, batch_size=1, shuffle=False)
+The dataloader is only for SubT front camera data (SubTF).
 
 # Evaluation Tools
 

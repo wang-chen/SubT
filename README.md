@@ -11,7 +11,7 @@ This repo contains both PyTorch dataloader and Python evaluation tools.
 
 # Dataset Usage example in PyTorch:
 
-        data = SubTF(root='/data/location', train=False, transform=transform, test_data=1)
+        data = SubT(root='/data/location', train=False, transform=transform, test_data=1)
         loader = Data.DataLoader(dataset=data, batch_size=1, shuffle=False)
 The dataloader is only for SubT front camera data (SubTF).
 

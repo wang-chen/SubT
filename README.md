@@ -62,17 +62,17 @@ For overall performance on entire dataset:
 
 For example, after you run the following overall performance script.
 
-      python performance.py --save-flag example --root results-example --category interest-2 --delta 1 2 3
+      python performance.py --save-flag example --root results-example --category interest-2 --delta 1 2 4
 
 You will get:
 
-* Mean Accuracy for delta = [1,2,3]
+* Mean Accuracy for delta = [1,2,4], respectively.
 
       mean accuracy: [0.26001525 0.37333027 0.5226512 ]
 
 * One Text file located in 'performance' folder.
 
-      It contains data of AUC-OP (three curves for delta = [1,2,3])
+      It contains data of AUC-OP (three curves for delta = [1,2,4])
 
 * One overal performance figure, seven single sequence figures, e.g.
 
@@ -81,8 +81,15 @@ You will get:
    
 # ROS bag launchfile
 
-      roslaunch subt.launch
+     roslaunch subt.launch
+   
+Note: you need to specify the argument 'datalocation' in 'subt.larunch' to find your bag data.
+      
+     <arg name="datalocation" default="/data/datasets"/>
 
+You also need to specify the sequence ID, e.g. SubT0.
+
+     <node pkg="rosbag" type="play" name="rosbag" args="--clock -r 3 $(arg SubT0)"/>
 
 # Citation
 

@@ -74,7 +74,7 @@ You will get:
 
       It contains data of AUC-OP (three curves for delta = [1,2,3])
 
-* One overal performance figure, six single sequence figures.
+* One overal performance figure, seven single sequence figures, e.g.
 
    ![SubT-overall](images/overall-example.png)
    

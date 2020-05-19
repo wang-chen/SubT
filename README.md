@@ -60,6 +60,7 @@ For example, after you run the following overall performance script, you will ge
 
 * One overal performance figure, six single sequence figures.
 
+   ![SubT-overall](images/overall-example.png)
 
 # Citation
 
@@ -69,3 +70,4 @@ For example, after you run the following overall performance script, you will ge
          journal={arXiv preprint arXiv:2005.08829},
          year={2020}
          }
+

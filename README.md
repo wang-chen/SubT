@@ -1,15 +1,30 @@
 # SubT
 
-The tools for the SubT dataset.
-
-This repo contains both PyTorch dataloader and Python evaluation tools.
-
+The tools for SubT dataset released by the Air Lab at Carnegie Mellon University.
 
 # Description
 
    Refer to [The AirLab Dataset Instructions](http://theairlab.org/dataset/interestingness)
 
-# Dataset Usage example in PyTorch:
+# This repo contains the following tools:
+
+* PyTorch dataloader
+      
+      subt.py
+
+* Python evaluation tools
+      
+      evaluation.py
+      performance.py
+
+* ROS bag launch tools
+
+      subt.launch
+
+
+# PyTorch dataloader
+
+   Usage example:
          
         from subt import SubT
         import torch.utils.data as Data
@@ -25,7 +40,6 @@ The dataloader is only for SubT front camera data (SubTF).
 
 For definition of the evaluation metric, checkout [our paper](https://arxiv.org/pdf/2005.08829.pdf).
 
-For single sequence:
 
 ## Usage Example
 
@@ -63,6 +77,12 @@ You will get:
 * One overal performance figure, six single sequence figures.
 
    ![SubT-overall](images/overall-example.png)
+   
+   
+# ROS bag launchfile
+
+      roslaunch subt.launch
+
 
 # Citation
 

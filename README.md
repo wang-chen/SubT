@@ -10,9 +10,15 @@ This repo contains both PyTorch dataloader and Python evaluation tools.
    Refer to [The AirLab Dataset Instructions](http://theairlab.org/dataset/interestingness)
 
 # Dataset Usage example in PyTorch:
+         
+        from subt import SubT
+        import torch.utils.data as Data
+        import torchvision.transforms as transforms
 
+        transform = transforms.Compose([transforms.Resize((320,320)), transforms.ToTensor()])
         data = SubT(root='/data/location', train=False, transform=transform, test_data=1)
         loader = Data.DataLoader(dataset=data, batch_size=1, shuffle=False)
+
 The dataloader is only for SubT front camera data (SubTF).
 
 # Evaluation Tools

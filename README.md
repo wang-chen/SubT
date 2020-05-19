@@ -1,16 +1,10 @@
-# SubTF
+# SubT
 
-The SubTF dataset PyTorch dataloader.
+The SubT dataset PyTorch dataloader.
 
 # Description
 
    Refer to [The AirLab Dataset Instructions](http://theairlab.org/dataset/interestingness)
-
-
-# Project
-
-   Refer to [The AirLab Project Description](http://theairlab.org/interestingness)
-
 
 # Dataset Usage example in PyTorch:
 

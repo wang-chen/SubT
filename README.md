@@ -23,6 +23,8 @@ The dataloader is only for SubT front camera data (SubTF).
 
 # Evaluation Tools
 
+For definition of the evaluation metric, checkout [our paper](https://arxiv.org/pdf/2005.08829.pdf).
+
 For single sequence:
 
 ## Usage Example
@@ -35,7 +37,7 @@ For single sequence:
       # source: ground-truth file
       # target: results file
 
-For overall performance on entire dataset
+For overall performance on entire dataset:
 
       python performance.py --save-flag example --root results-example --category interest-1
       # root: location of result files
@@ -44,11 +46,11 @@ For overall performance on entire dataset
       #     where only the sequence ID, date, and time can be different.
       # category: interest-1 or interest-2
 
-More information about this evaluation metric, checkout [our paper](https://arxiv.org/pdf/2005.08829.pdf).
-
-For example, after you run the following overall performance script, you will get
+For example, after you run the following overall performance script.
 
       python performance.py --save-flag example --root results-example --category interest-2 --delta 1 2 3
+
+You will get:
 
 * Mean Accuracy for delta = [1,2,3]
 

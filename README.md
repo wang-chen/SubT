@@ -99,6 +99,10 @@ You also need to specify the sequence ID, e.g. SubT0.
 
      <node pkg="rosbag" type="play" name="rosbag" args="--clock -r 3 $(arg SubT0)"/>
 
+Then you'll get: 
+
+      ![SubT-rviz](images/rviz.png)
+
 # Citation
 
       @article{wang2020visual,

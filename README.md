@@ -47,13 +47,13 @@ We provide results example files in folder 'results-example'.
 
 For single sequence:
 
-      python evaluation.py --source 'ground-truth/0817-ugv0-tunnel0-interest-1.txt' --target 'results-example/SubTF-0-2020-03-04-21:43:27-example.txt'
+      python script/evaluation.py --source 'ground-truth/0817-ugv0-tunnel0-interest-1.txt' --target 'results-example/SubTF-0-2020-03-04-21:43:27-example.txt'
       # source: ground-truth file
       # target: results file
 
 For overall performance on entire dataset:
 
-      python performance.py --save-flag example --root results-example --category interest-1
+      python script/performance.py --save-flag example --root results-example --category interest-1
       # root: location of result files
       # save-flag: flag of result files
       #     You have to name the result files following the formate of "SubTF-5-2020-03-04-22:06:43-example.txt", 
@@ -62,7 +62,7 @@ For overall performance on entire dataset:
 
 For example, after you run the following overall performance script.
 
-      python performance.py --save-flag example --root results-example --category interest-2 --delta 1 2 4
+      python script/performance.py --save-flag example --root results-example --category interest-2 --delta 1 2 4
 
 You will get:
 
@@ -81,8 +81,16 @@ You will get:
    
 # ROS bag launchfile
 
-     roslaunch subt.launch
-   
+To use this function, you have to put this repo to your ROS workplace, e.g.,
+
+      cd ~/catkin_ws/src
+      git clone https://github.com/wang-chen/SubT.git
+      cd ~/catkin_ws && catkin_make
+
+Then run the launch file
+
+     roslaunch SubT subt.launch
+
 Note: you need to specify the argument 'datalocation' in 'subt.larunch' to find your bag data.
       
      <arg name="datalocation" default="/data/datasets"/>

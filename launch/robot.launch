@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<launch>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="laser_enabled" default="true"/>
+    <arg name="kinect_enabled" default="true"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="robot_link"      args="0 0 -0.7 0 0 0 1 velodyne base_link" output='log'/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="front_left_wheel_link"  args="0.25 -0.25  0 0 0 0 1 base_link front_left_wheel_link" output='log'/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="front_right_wheel_link" args="0.25  0.25  0 0 0 0 1 base_link front_right_wheel_link" output='log'/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="rear_left_wheel_link"   args="-0.25 -0.25 0 0 0 0 1 base_link rear_left_wheel_link" output='log'/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="rear_right_wheel_link"  args="-0.25  0.25 0 0 0 0 1 base_link rear_right_wheel_link" output='log'/>
+
+    <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+        <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+        <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+    </include>
+
+</launch>

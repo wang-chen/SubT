@@ -42,8 +42,9 @@ For definition of the evaluation metric, checkout [our paper](https://arxiv.org/
 
 
 ## Usage Example
+You have to provide your result files.
 
-We provide results example files in folder 'results-example'.
+Result example files are provided in folder 'results-example'.
 
 For single sequence:
 
@@ -81,7 +82,7 @@ You will get:
    
 # ROS bag launchfile
 
-To use this function, you have to put this repo to your ROS workplace, e.g.,
+To use this function, you have to put this repo to your ROS workplace and compile, e.g.,
 
       cd ~/catkin_ws/src
       git clone https://github.com/wang-chen/SubT.git

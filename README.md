@@ -8,19 +8,11 @@ The tools for SubT dataset released by the Air Lab at Carnegie Mellon University
 
 # This repo contains the following tools:
 
-* PyTorch dataloader
+* PyTorch dataloader (No need to install PyTorch, if you don't need this function.)
       
-      subt.py
-
 * Python evaluation tools
-      
-      evaluation.py
-      performance.py
 
-* ROS bag launch tools
-
-      subt.launch
-
+* ROS bag launch tools (No need to install ROS, if you don't need this function.)
 
 # PyTorch dataloader
 

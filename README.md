@@ -101,7 +101,7 @@ You also need to specify the sequence ID, e.g. SubT0.
 
 Then you'll get: 
 
-      ![SubT-rviz](images/rviz.png)
+   ![SubT-rviz](images/rviz.png)
 
 # Citation
 
@@ -111,4 +111,3 @@ Then you'll get:
          journal={arXiv preprint arXiv:2005.08829},
          year={2020}
          }
-

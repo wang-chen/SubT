@@ -1,6 +1,6 @@
 # SubT
 
-The tools for SubT dataset released by the Air Lab at Carnegie Mellon University.
+The tools for SubT dataset released by [The Air Lab](http://theairlab.org) at [Carnegie Mellon University](https://www.cmu.edu).
 
 # Description
 
@@ -8,11 +8,13 @@ The tools for SubT dataset released by the Air Lab at Carnegie Mellon University
 
 # This repo contains the following tools:
 
-* PyTorch dataloader (No need to install PyTorch, if you don't need this function.)
+* PyTorch dataloader (No need to [install PyTorch](https://pytorch.org/get-started/locally/), if you don't need this function).
       
-* Python evaluation tools
+* Python evaluation tools for the daseset.
 
-* ROS bag launch tools (No need to install ROS, if you don't need this function.)
+      python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+
+* ROS bag launchfiles and visualization (No need to [install ROS](http://wiki.ros.org/ROS/Installation), if you don't need this function).
 
 # PyTorch dataloader
 
@@ -72,9 +74,9 @@ You will get:
    ![SubT-overall](images/overall-example.png)
    
    
-# ROS bag launchfile
+# ROS bag launchfile and visualization
 
-To use this function, you have to put this repo to your ROS workplace and compile, e.g.,
+To use this function, you have to put this repo in your ROS workplace and compile, e.g.,
 
       cd ~/catkin_ws/src
       git clone https://github.com/wang-chen/SubT.git
@@ -104,3 +106,5 @@ Then you'll get:
          journal={arXiv preprint arXiv:2005.08829},
          year={2020}
          }
+
+# [Download this paper](https://arxiv.org/pdf/2005.08829.pdf)

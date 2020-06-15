@@ -1,6 +1,6 @@
 # SubT
 
-The tools for SubT dataset released by [The Air Lab](http://theairlab.org) at [Carnegie Mellon University](https://www.cmu.edu).
+The tools for SubT interestingness dataset released by [The Air Lab](http://theairlab.org) at [Carnegie Mellon University](https://www.cmu.edu).
 
 # Description
 

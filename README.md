@@ -94,6 +94,18 @@ You also need to specify the sequence ID, e.g. SubT0.
 
      <node pkg="rosbag" type="play" name="rosbag" args="--clock -r 3 $(arg SubT0)"/>
 
+* The corresponding sequence ID is listed:
+
+    |   Data sequence     | ID   | ROS args|
+    |  :-----------:      | :--: | :----: |
+    |  0817-ugv0-tunnel0  |  0   | SubT0 |
+    |  0817-ugv1-tunnel0  |  1   | SubT1 |
+    |  0818-ugv0-tunnel1  |  2   | SubT2 |
+    |  0818-ugv1-tunnel1  |  3   | SubT3 |
+    |  0820-ugv0-tunnel1  |  4   | SubT4 |
+    |  0821-ugv0-tunnel0  |  5   | SubT5 |
+    |  0821-ugv1-tunnel0  |  6   | SubT6 |
+
 Then you'll get: 
 
    ![SubT-rviz](images/rviz.png)
